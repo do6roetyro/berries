@@ -10,15 +10,15 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicons/apple-touch-icon.png" type="image/png" />
     <script defer="defer" src="scripts/index.js"></script>
-    <title>Berries - main & catalog</title>
+    <title>Berries - form</title>
   </head>
 
   <body class="page__body">
-    <div class="page__container">
+    <div class="page__container page__container--form">
       <header class="main-header">
         <nav class="main-nav">
           <div class="main-nav__wrapper main-nav__wrapper--noscript">
-            <a class="main-nav__logo-link logo" href="#">
+            <a class="main-nav__logo-link logo" href="index.html">
               <span class="visually-hidden">Перейти на главную</span>
               <svg
                 class="logo__image"
@@ -105,7 +105,7 @@
           </div>
           <ul class="main-nav__list main-nav__list--noscript list">
             <li class="main-nav__item">
-              <a class="main-nav__link link" href="#">Каталог</a>
+              <a class="main-nav__link link" href="index.html">Каталог</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link link" href="#">Новости</a>
@@ -114,403 +114,381 @@
               <a class="main-nav__link link" href="#">Контакты</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">Заказать</a>
+              <a class="main-nav__link main-nav__link--current link" href="#"
+                >Заказать</a
+              >
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-container">
-        <h1 class="visually-hidden">'Ягоды' - Ягоды с доставкой</h1>
-        <section class="hero hero--main">
-          <div class="hero__wrapper wrapper">
-            <h2 class="hero__title text text--h2">
-              Ягоды с&nbsp;доставкой
-            </h2>
-            <ul class="hero__list list">
-              <li class="hero__item hero__item--leave">Отборные ягоды</li>
-              <li class="hero__item hero__item--snow">
-                Натуральный вкус сохранён методом шоковой заморозки
-              </li>
-              <li class="hero__item hero__item--moto">
-                Доставка по Санкт-Петербургу
-              </li>
-            </ul>
-            <a class="hero__link link button button--purple" href="form.html"
-              >Заказать</a
-            >
-          </div>
+        <h1 class="visually-hidden">'Ягоды' - Форма для заказа</h1>
+        <section class="hero hero--form">
+          <h2 class="visually-hidden">Форма для заказа</h2>
         </section>
-        <section class="catalog">
-          <div class="catalog__wrapper wrapper">
-            <h2 class="catalog__title text text--h2">Каталог</h2>
-            <ul class="catalog__list list">
-              <!-- 1 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_raspberry@1x.webp 1x,
-                        images/catalog_raspberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_raspberry@1x.jpg"
-                      srcset="images/catalog_raspberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Малина."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Малина</h3>
-                  <p class="catalog-item__price item-price">
-                    350 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 2 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_blackberry@1x.webp 1x,
-                        images/catalog_blackberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_blackberry@1x.jpg"
-                      srcset="images/catalog_blackberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Ежевика."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Ежевика</h3>
-                  <p class="catalog-item__price item-price">
-                    550 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 3 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_cowberry@1x.webp 1x,
-                        images/catalog_cowberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_cowberry@1x.jpg"
-                      srcset="images/catalog_cowberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Брусника."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Брусника</h3>
-                  <p class="catalog-item__price item-price">
-                    390 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 4 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_strawberry@1x.webp 1x,
-                        images/catalog_strawberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_strawberry@1x.jpg"
-                      srcset="images/catalog_strawberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Клубника."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Клубника</h3>
-                  <p class="catalog-item__price item-price">
-                    450 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 5 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_cherry@1x.webp 1x,
-                        images/catalog_cherry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_cherry@1x.jpg"
-                      srcset="images/catalog_cherry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Вишня."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Вишня</h3>
-                  <p class="catalog-item__price item-price">
-                    375 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 6 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_gooseberry@1x.webp 1x,
-                        images/catalog_gooseberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_gooseberry@1x.jpg"
-                      srcset="images/catalog_gooseberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Крыжовник."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Крыжовник</h3>
-                  <p class="catalog-item__price item-price">
-                    300 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 7 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_blueberry@1x.webp 1x,
-                        images/catalog_blueberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_blueberry@1x.jpg"
-                      srcset="images/catalog_blueberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Голубика."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Голубика</h3>
-                  <p class="catalog-item__price item-price">
-                    510 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 8-->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_cranberry@1x.webp 1x,
-                        images/catalog_cranberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_cranberry@1x.jpg"
-                      srcset="images/catalog_cranberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Клюква."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Клюква</h3>
-                  <p class="catalog-item__price item-price">
-                    320 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="news">
-          <div class="news__wrapper wrapper">
-            <h2 class="news__title text text--h2">Что новенького?</h2>
-            <div class="news__container">
-              <article class="news__item news-item">
-                <h3 class="news-item__title text">Новый урожай клубники</h3>
-                <p class="news-item__description text">
-                  <span class="text__wrap text__wrap--news"
-                    >К нам поступила свежая сочная ароматная клубника
-                  </span>
-                  из Алтайского края. Крупные отборные ягоды можно приобрести
-                  свежими
-                  <span class="text__wrap text__wrap--news-5"
-                    >от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон
-                    клубники короткий и свежие ягоды скоро закончатся.</span
-                  >
-                </p>
-                <p class="news-item__date text">22 июня 2022</p>
-              </article>
-              <article class="news__item news-item">
-                <h3 class="news-item__title news-item__title--discount text">
-                  В июне дарим скидку 15% на все свежие ягоды
-                </h3>
-                <p class="news-item__description text">
-                  Свежие ягоды урожая этого года со скидкой 15%. Клубнику,
-                  малину, голубику, вишню доставим от 200 гр.
-                </p>
-                <p class="news-item__date text">15 июня 2022</p>
-              </article>
-              <article class="news__item news__item--mix news-item">
-                <h3 class="news-item__title news-item__title--berriesmix text">
-                  Микс из ягод
-                </h3>
-                <p class="news-item__description text">
-                  <span class="text__wrap text__wrap--news-1"
-                    >Мы приготовим для вас смеси
-                  </span>
-                  <span class="text__wrap text__wrap--news-4"
-                    >из различных замороженных ягод по вашему пожеланию. Ягодные
-                    смеси удобно использовать для приготовления напитков. Все
-                    ягоды
-                  </span>
-
-                  <span class="text__wrap text__wrap--news-2"
-                    >замораживаются методом шоковой заморозки, что позволяет
-                  </span>
-                  <span class="text__wrap text__wrap--news-3"
-                    >сохранить их естественный вкус и аромат</span
-                  >.
-                </p>
-                <p class="news-item__date text">02 июня 2022</p>
-              </article>
+        <section class="order">
+          <div class="order__wrapper wrapper">
+            <div class="order__container">
+              <h2 class="order__title text text--h2">Закажи ягоды</h2>
+              <p class="order__description text">
+                Мы соберем для вас ягоды и доставим их в удобном для вас виде -
+                свежими или замороженными
+              </p>
             </div>
+            <form
+              class="order__form form"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
+              <!-- Ягодки -->
+              <fieldset
+                class="form__berries berries fieldset fieldset--berries"
+              >
+                <legend class="fieldset__title text text--legend">
+                  Выберите ягоды
+                </legend>
+                <div class="fieldset__container fieldset__container--berries">
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="cowberry"
+                      value="cowberry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">брусника</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="cherry"
+                      value="cherry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">вишня</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="blueberry"
+                      value="blueberry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">голубика</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="bramble"
+                      value="bramble"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">ежевика</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="strawberry"
+                      value="strawberry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">клубника</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="cranberry"
+                      value="cranberry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">клюква</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="gooseberry"
+                      value="gooseberry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">крыжовник</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="raspberry"
+                      value="raspberry"
+                      name="berries"
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">малина</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="cloudberry"
+                      value="cloudberry"
+                      name="berries"
+                      disabled
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">морошка</span></span
+                    >
+                  </label>
+                  <label class="berries__label label">
+                    <input
+                      class="berries__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="blackberry"
+                      value="blackberry"
+                      name="berries"
+                      disabled
+                    />
+                    <span
+                      class="berries__description label__description label__description--checkbox"
+                      ><span class="berries__text">черника</span></span
+                    >
+                  </label>
+                </div>
+              </fieldset>
+              <!-- Хранение -->
+              <fieldset
+                class="form__storage storage fieldset fieldset--storage"
+              >
+                <legend class="fieldset__title text text--legend">
+                  Вид хранения
+                </legend>
+                <div class="fieldset__container fieldset__container--storage">
+                  <label class="storage__label label">
+                    <input
+                      class="storage__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="fresh"
+                      value="fresh"
+                      name="storage"
+                    />
+                    <span
+                      class="storage__description label__description label__description--checkbox"
+                      ><span class="storage__text">свежие ягоды</span></span
+                    >
+                  </label>
+                  <label class="storage__label label">
+                    <input
+                      class="storage__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="frozen"
+                      value="frozen"
+                      name="storage"
+                    />
+                    <span
+                      class="storage__description label__description label__description--checkbox"
+                      ><span class="storage__text"
+                        >замороженные ягоды</span
+                      ></span
+                    >
+                  </label>
+                  <label class="storage__label label">
+                    <input
+                      class="storage__input input input--checkbox visually-hidden"
+                      type="checkbox"
+                      id="mix"
+                      value="mix"
+                      name="storage"
+                    />
+                    <span
+                      class="storage__description label__description label__description--checkbox"
+                      ><span class="storage__text">ягодные миксы</span></span
+                    >
+                  </label>
+                </div>
+              </fieldset>
+              <!-- Способ доставки -->
+              <fieldset
+                class="form__delivery delivery fieldset fieldset--delivery"
+              >
+                <legend
+                  class="fieldset__title fieldset__title--delivery text text--legend"
+                >
+                  Способ доставки
+                </legend>
+                <ul class="delivery__list list">
+                  <li class="delivery__item">
+                    <label class="delivery__label label" for="incity">
+                      <input
+                        class="delivery__input input input--radio visually-hidden"
+                        type="radio"
+                        value="Доставка
+                    (по СПБ в пределах КАД)"
+                        id="incity"
+                        name="delivery"
+                        checked
+                      />
+                      <span
+                        class="delivery__description label__description label__description--radio"
+                        >Доставка (по СПБ в пределах КАД)</span
+                      >
+                    </label>
+                  </li>
+                  <li class="delivery__item">
+                    <label class="delivery__label label" for="countryside">
+                      <input
+                        class="delivery__input input input--radio visually-hidden"
+                        type="radio"
+                        value="Самовывоз
+                    (Набережная Обводного канала, 101)"
+                        id="countryside"
+                        name="delivery"
+                      />
+                      <span
+                        class="delivery__description label__description label__description--radio"
+                      >
+                        Самовывоз (Набережная Обводного канала, 101)</span
+                      >
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset
+                class="form__contacts-form contacts-form fieldset fieldset--contacts-form"
+              >
+                <legend
+                  class="fieldset__title fieldset__title--contacts text text--legend"
+                >
+                  Ваши контакты
+                </legend>
+                <div
+                  class="fieldset__container fieldset__container--contacts-form"
+                >
+                  <!-- name -->
+                  <label
+                    class="contacts-form__label contacts-form__label--required contacts-form__label--name label"
+                    for="name"
+                  >
+                    <span class="contacts-form__title text"
+                      >Имя <span class="text text--asteriks">*</span></span
+                    >
+                    <input
+                      class="contacts-form__input input input--text"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Как к вам обращаться?"
+                      required
+                    />
+                  </label>
+                  <!-- phone -->
+                  <label
+                    class="contacts-form__label contacts-form__label--required contacts-form__label--phone label"
+                    for="phone"
+                  >
+                    <span class="contacts-form__title text"
+                      >Телефон <span class="text text--asteriks">*</span></span
+                    >
+                    <input
+                      class="contacts-form__input input input--text"
+                      type="tel"
+                      pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+                      id="phone"
+                      name="phone"
+                      placeholder="+7 ххх ххх хх хх"
+                      required
+                    />
+                  </label>
+                  <!-- mail -->
+                  <label
+                    class="contacts-form__label contacts-form__label--required contacts-form__label--mail label"
+                    for="mail"
+                  >
+                    <span class="contacts-form__title text"
+                      >Email <span class="text text--asteriks">*</span></span
+                    >
+                    <input
+                      class="contacts-form__input input input--text"
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      placeholder="Ваш email"
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                      required
+                    />
+                  </label>
+                  <!-- adress -->
+                  <label
+                    class="contacts-form__label contacts-form__label--required contacts-form__label--adress label"
+                    for="adress"
+                  >
+                    <span class="contacts-form__title text"
+                      >Адрес <span class="text text--asteriks">*</span></span
+                    >
+                    <input
+                      class="contacts-form__input contacts-form__input--adress input input--text"
+                      type="text"
+                      name="adress"
+                      id="adress"
+                      placeholder="Адрес в Санкт-Петербурге"
+                      required
+                    />
+                  </label>
+                  <!-- add -->
+                  <label
+                    class="contacts-form__label contacts-form__label--add label"
+                    for="add"
+                  >
+                    <span
+                      class="contacts-form__title contacts-form__title--add text"
+                      >Пожелания к заказу</span
+                    >
+                    <textarea
+                      class="contacts-form__input contacts-form__input--add input input--text"
+                      rows="4"
+                      id="add"
+                      name="add"
+                      placeholder="Чем мы можем вам помочь?"
+                    ></textarea>
+                  </label>
+                </div>
+              </fieldset>
+              <button class="form__button button button--purple" type="submit">
+                <span class="button__description">Заказать</span>
+              </button>
+            </form>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts contacts--form">
           <div class="contacts__wrapper wrapper">
-            <h2 class="contacts__title text text--h2">
-              <span class="text__wrap text__wrap--contacts">Где забрать</span>
-              ягоды?
+            <h2 class="contacts__title contacts__title--form text text--h2">
+              Где забрать ягоды?
             </h2>
             <p class="contacts__description text">
               Забери ягоды с нашего склада по адресу:
